@@ -20,16 +20,22 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-            child: Text(
-                'hello ninjas!',
-                style: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 2.0,
-                    color: Colors.grey[600],
-                    fontFamily: 'IndieFlower'
-                )
-            )
+            // child: Text(
+            //     'hello ninjas!',
+            //     style: TextStyle(
+            //         fontSize: 20.0,
+            //         fontWeight: FontWeight.bold,
+            //         letterSpacing: 2.0,
+            //         color: Colors.grey[600],
+            //         fontFamily: 'IndieFlower'
+            //     )
+            // )
+            // child: Image(
+            //   image: NetworkImage('https://images.dog.ceo/breeds/poodle-miniature/n02113712_2451.jpg')
+            //   image: AssetImage('assets/space-3.jpg')
+            // )
+            // child: Image.asset('assets/space-3.jpg')
+            child: Image.network('https://images.dog.ceo/breeds/sharpei/noel.jpg')
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {  },
