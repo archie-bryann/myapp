@@ -8,6 +8,8 @@ void main() {
 
 // stateless widget => stless + tab/enter // much quicker updates
 class Home extends StatelessWidget {
+  const Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
