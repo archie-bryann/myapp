@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,12 +33,53 @@ class Home extends StatelessWidget {
             //         fontFamily: 'IndieFlower'
             //     )
             // )
+
             // child: Image(
             //   image: NetworkImage('https://images.dog.ceo/breeds/poodle-miniature/n02113712_2451.jpg')
             //   image: AssetImage('assets/space-3.jpg')
             // )
+
             // child: Image.asset('assets/space-3.jpg')
-            child: Image.network('https://images.dog.ceo/breeds/sharpei/noel.jpg')
+            // child: Image.network('https://images.dog.ceo/breeds/sharpei/noel.jpg')
+
+            // child: Icon(
+            //   Icons.airport_shuttle,
+            //   color: Colors.lightBlue,
+            //   size: 50.0,
+            // )
+
+            // ElevatedButton // TextButton // OutlinedButton
+            // child: ElevatedButton(
+            //   onPressed: () {
+            //     if (kDebugMode) {
+            //       print('you clicked me');
+            //     }
+            //   },
+            //   style: ElevatedButton.styleFrom(
+            //     backgroundColor: Colors.lightBlue, // set the background color
+            //     foregroundColor: Colors.white // set the text color
+            //   ),
+            //   child: Text('click me'),
+            // )
+          
+            // child: ElevatedButton.icon(
+            //   onPressed: () {},
+            //   icon: Icon(
+            //     Icons.mail
+            //   ),
+            //   label: Text('mail me'),
+            //   style: ElevatedButton.styleFrom(
+            //     backgroundColor: Colors.amber,
+            //     foregroundColor: Colors.white
+            //   ),
+            // )
+
+          child: IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.alternate_email),
+            color: Colors.amber,
+          )
+
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {  },
