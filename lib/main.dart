@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
-        body: Center(
+        // body: Center(
             // child: Text(
             //     'hello ninjas!',
             //     style: TextStyle(
@@ -74,12 +74,20 @@ class Home extends StatelessWidget {
             //   ),
             // )
 
-          child: IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.alternate_email),
-            color: Colors.amber,
-          )
+        //   child: IconButton(
+        //     onPressed: () {},
+        //     icon: Icon(Icons.alternate_email),
+        //     color: Colors.amber,
+        //   )
+        // ),
 
+        body: Container( // takes up the size of the child widget
+          // padding: EdgeInsets.all(20.0),
+          // padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0), 
+          padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+          margin: EdgeInsets.all(30.0),
+          color: Colors.grey,
+          child: Text("hello")
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {  },
