@@ -8,6 +8,7 @@ void main() {
 }
 
 // stateless widget => stless + tab/enter // much quicker updates
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -95,23 +96,51 @@ class Home extends StatelessWidget {
         //   child: Text("hello")
         // ),
 
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        // body: Row(
+        //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //   crossAxisAlignment: CrossAxisAlignment.start,
+        //   children: <Widget>[
+        //     Text('hello, world'),
+        //     TextButton(
+        //       onPressed: () {},
+        //       style: TextButton.styleFrom(
+        //         backgroundColor: Colors.amber,
+        //         foregroundColor: Colors.white
+        //       ),
+        //       child: Text("click me")
+        //     ),
+        //     Container(
+        //       color: Colors.cyan,
+        //       padding: EdgeInsets.all(30.0),
+        //       child: Text("inside container")
+        //     )
+        //   ]
+        // ),
+
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            Text('hello, world'),
-            TextButton(
-              onPressed: () {},
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.amber,
-                foregroundColor: Colors.white
-              ),
-              child: Text("click me")
+            Row(
+              children: <Widget>[
+                Text('hello,'),
+                Text(' world')
+              ]
             ),
             Container(
+              padding: EdgeInsets.all(20.0),
               color: Colors.cyan,
-              padding: EdgeInsets.all(30.0),
-              child: Text("inside container")
+              child: Text('one')
+            ),
+            Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.pinkAccent,
+                child: Text('two')
+            ),
+            Container(
+                padding: EdgeInsets.all(40.0),
+                color: Colors.amber,
+                child: Text('three')
             )
           ]
         ),
