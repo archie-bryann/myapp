@@ -81,14 +81,20 @@ class Home extends StatelessWidget {
         //   )
         // ),
 
-        body: Container( // takes up the size of the child widget
-          // padding: EdgeInsets.all(20.0),
-          // padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0), 
-          padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
-          margin: EdgeInsets.all(30.0),
-          color: Colors.grey,
+        // body: Container( // takes up the size of the child widget
+        //   // padding: EdgeInsets.all(20.0),
+        //   // padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+        //   padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+        //   margin: EdgeInsets.all(30.0),
+        //   color: Colors.grey,
+        //   child: Text("hello")
+        // ),
+
+        body: Padding( // can't use margin property here
+          padding: EdgeInsets.all(90.0),
           child: Text("hello")
         ),
+
         floatingActionButton: FloatingActionButton(
           onPressed: () {  },
           backgroundColor: Colors.red[600],
